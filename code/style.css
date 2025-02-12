@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #f39c12;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  padding: 5px;
+  width: 200px;
+}
+
+.search-box button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.search-box button:hover {
+  color: #f39c12;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar .nav-links li {
+    margin: 10px 0;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+}
+
+header {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 40px;
+  letter-spacing: 1.5px;
+}
+
+div h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: #34495e;
+}
+
+section.first, section.second , section.third{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.bodh, .Nalanda, .Rajgir, .Vaishali, .Patna, .Pawapuri, .Vikramshila, .Sasaram, .Bhagalpur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 450px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.bodh:hover, .Nalanda:hover, .Rajgir:hover, .Vaishali:hover, .Patna:hover, .Pawapuri:hover, .Vikramshila:hover, .Sasaram:hover, .Bhagalpur:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.bodh img, .Nalanda img, .Rajgir img, .Vaishali img, .Patna img, .Pawapuri img, .Vikramshila img, .Sasaram img, .Bhagalpur img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.bodh:hover img, .Nalanda:hover img, .Rajgir:hover img, .Vaishali:hover img, .Patna:hover img, .Pawapuri:hover img, .Vikramshila:hover img, .Sasaram:hover img, .Bhagalpur:hover img {
+  transform: scale(1.02);
+}
+
+.bodh h1, .Nalanda h1, .Rajgir h1, .Vaishali h1, .Patna h1, .Pawapuri h1, .Vikramshila h1, .Sasaram h1, .Bhagalpur h1 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+}
